@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+   
+  </head>
+  <body>
+    
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header>
+        <div class="content">
+        <h1>Tilak Gavara</h1>
+        <h2>Web Application developer using Django and Frontend developer</h2>
+
+        <p>As a Frontend developer I have a fine grip in creating smooth Frontend projects and can make them responsive</p>
+        <p>Created few webapplications using Django.</p>
+      </div>
+      </header>
+
+      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="projects">
+        <div class="content">
+        <h2>Featured Projects</h2>
+
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section class="project-item">
+          <img src="/placeholder images/tic.png" height=250px width=200px alt="description of image">
+          <h3>TIC TAC TOE</h3>
+          <p>Developed Tic Tac Toe game Using React JS.</p>
+          <a class="btn" href="https://grand-profiterole-7c9470.netlify.app" target="_blank">View project</a>
+        </section>
+        <section class="project-item">
+          <img src="/placeholder images/portfolio.jpg" alt="description of image">
+          <h3>PORTFOLIO</h3>
+          <p>Developed a PortFolio website which I developed while learning the Course of Frontend development.</p>
+          <a class="btn" href="#" target="_blank">View project</a>
+        </section>
+        <section class="project-item">
+          <img src="/placeholder images/note-taking.png" alt="description of image">
+          <h3>Note Making</h3>
+          <p>Developed a Note Making website using React JS.</p>
+          <a class="btn" href="https://zingy-fairy-0bf22e.netlify.app" target="_blank">View project</a>
+        </section>
+        <section class="project-item">
+          <img src="/placeholder images/quiz.avif" alt="description of image">
+          <h3>Online Quiz</h3>
+          <p>Developed an online quiz application project in which I have done the Frontend needed for that project and also linked the database connections using django framework,</p>
+          <a class="btn" href="#" target="_blank">View project</a>
+        </section>
+        <section class="project-item">
+          <img src="/placeholder images/sharon-mccutcheon-unsplash.jpg" alt="description of image">
+          <h3>Event List</h3>
+          <p>Developed an Event List web application while participating in an hackathon. We used django framework inorder to create this webapplication.</p>
+          <a class="btn" href="#" target="_blank">View project</a>
+        </section>
+        <section class="project-item">
+          <img src="/placeholder images/spaghetti-1932466__340.jpg" alt="description of image">
+          <h3>Online Food delivery</h3>
+          <p>Developed an Online Food Delivery App. This is my first complete responsive website that I have developed in an hackathon. In that Hackathon our project was selected as the best looking project..</p>
+          <a class="btn" href="#" target="_blank">View project</a>
+        </section>
+        
+        <!-- End of Project block. -->
+      </div>
+      </section>
+
+      <!-- ***********************  CERTIFICATES  *********************** -->
+
+      <section class="certificates">
+        <div class="content">
+          <h2>Certificates</h2>
+        <div class="images" >
+          <img src="internship.png" id="imgs" alt="images"/>
+        </div>
+        </div>
+      </section>
+        <script>
+          var images = ["internship.png","cloudarchitect.png","cloudfoundation.png","css.png","html.png","digital.png"];
+          var index = 0;
+          function displayImages() {
+            var img=document.getElementById("imgs");
+                  img.src=images[index];
+            index = (index + 1) % images.length;
+          }
+          setInterval(displayImages, 2000);
+        </script>
+
+
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+
+      <section class="work">
+      <div class="content">
+        <h2>Work Experiences</h2>
+        <div class="content1">
+          <h3>Virtual Internship in Aws Academy</h3>
+          <p>I have an hands-on Experience in Aws cloud management console where I have learnt many things about the cloud technologies.
+          </p>
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <section class="content-list">
+            <div class="jobtitle">
+              <h3>Desgined A cafe web site</h3>
+            </div>
+            <div class="jobsummary">
+              <p>The tutors of AWS academy explained about the cloud environment and how the network connections should be done
+                during the development of a website in cloud.</p>
+            </div>
+          </section>
+          <!-- End of Job block. -->
+         </div>
+        <div class="content1">
+        <h3>Hackathon Experiences</h3>
+        <p>I have done projects in many events.Participation in these events had given me an opportunity to work in teams.
+          Working in teams had helped me a lot in improving my idealogy and in improving my skills. </p>
+        <!-- Copy this whole <section> block to add more jobs. -->
+        <section class="content-list">
+          <div class="jobtitle">
+            <h3>Frontend Developer</h3>
+            <p>Participated in an hackathon. </p>
+          </div>
+          <div class="jobsummary">
+            <p>Given few domains we need to choose one among them and implement our project in that domain provided the constraints..</p>
+          </div>
+        </section>
+        <!-- End of Job block. -->
+       </div>
+
+      <div class="content1">
+        <h3>Django Project</h3>
+        <p>I have developed an Online Quiz Application using Django Framework. It was a very good Experience through which
+          I came to know about how actually a web app runs and understood the request response converstion in between the client and server..</p>
+        <!-- Copy this whole <section> block to add more jobs. -->
+        <section class="content-list">
+          <div class="jobtitle">
+            <h3>WebApp Developer using Django Framework</h3>
+            <p>Created an Online Quiz Application</p>
+          </div>
+          <div class="jobsummary">
+            <p>The Application is meant to conduct Quiz in online where there will be the main authorized person who creates Questions and then the 
+              students logsin with their credentials provided by them during registeration. We created models for their login credentials which are 
+              stored while they register, these data is stored in sqlite3.
+            </p>
+          </div>
+        </section>
+        <!-- End of Job block. -->
+       
+      </div>
+      </div>
+      </section>
+
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="education">
+        <div class="content">
+        <h2>Education</h2>
+
+        <!-- Copy this whole <section> block to add more schools. -->
+        <section>
+          <h3>MSM EM SCHOOL - VISAKHAPATNAM</h3>
+          <p>Primary and secondary Education completed in the year 2018..</p>
+          <p><b>cgpa: </b>10</p>
+        </section>
+        <section>
+          <h3>NARAYANA JR COLLEGE - VISAKHAPATNAM</h3>
+          <p>Completed my intermediate education ( 11th and 12th ) in the year 2020</p>
+          <p><b> cgpa: </b>9.65</p>
+        </section>
+        <section>
+          <h3>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING - VISAKHAPATNAM</h3>
+          <p>Completed my B-Tech education in the year 2024</p>
+          <p><b> cgpa: </b>8.9</p>
+        </section>
+        <!-- End of School block. -->
+        </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="content">
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="contact-list">
+          <li><a href="mailto:tilakgavara@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/tilak-gavara-780944250/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/TilakGavara" target="_blank">Github</a></li>
+        </ul>
+      </div>
+      </footer>
+    </main>
+  </body>
+</html>

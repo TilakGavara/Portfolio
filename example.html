@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Continuous Image Display</title>
+</head>
+<body>
+	<div id="image-container">
+        <img src="cloudarchitect.png" id="imgs" alt="im">
+    </div>
+
+	<script>
+		// Array of image URLs
+		var images = ["cloudarchitect.png","cloudfoundation.png","css.png","html.png","digital.png"];
+		var index = 0;
+
+		// Function to display images
+		function displayImages() {
+		  var img=document.getElementById('imgs');
+            img.src=images[index];
+		  index = (index + 1) % images.length;
+		}
+		// Call the function every 3 seconds
+		setInterval(displayImages, 1000);
+	</script>
+</body>
+</html>
